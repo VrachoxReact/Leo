@@ -1,0 +1,175 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #edf2f7;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  margin: 0 auto;
+  overflow-x: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+table {
+  width: auto; /* Allow the table to expand as needed */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  display: block; /* Make the table a block element */
+  overflow-x: auto; /* Only scroll horizontally if necessary */
+}
+
+th,
+td {
+  text-align: left;
+  padding: 20px; /* Increase padding to make cells larger */
+  border-bottom: 2px solid #eaecef;
+  min-width: 120px; /* Set a minimum width for each cell */
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+}
+
+td input,
+td select {
+  width: calc(100% - 24px); /* Subtract padding and border widths */
+  padding: 12px; /* Increase padding */
+  margin: 4px 0;
+  border-radius: 5px;
+  border: 1px solid #cbd5e0;
+  background-color: #f8fafc;
+  color: #4a5568;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+td input:focus,
+td select:focus {
+  outline: none;
+  border-color: #90cdf4;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.overdue {
+  background-color: #bee3f8;
+  color: #1a202c;
+}
+
+button {
+  padding: 12px 24px; /* Increase padding */
+  border: none;
+  border-radius: 5px;
+  background-color: #3182ce;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2c5282;
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+}
+
+.add-boxer-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.add-boxer-form input,
+.add-boxer-form select,
+.add-boxer-form label {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-boxer-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.add-boxer-form input,
+.add-boxer-form select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e0;
+  background-color: #f8fafc;
+  color: #4a5568;
+}
+
+button#addBoxerBtn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+.overdue {
+  background-color: #d3d3d3; /* Or any other gray color you prefer */
+  color: #1a202c;
+}
+
+/* Existing styles */
+
+.search-bar {
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e0;
+  background-color: #f8fafc;
+  color: #4a5568;
+}
+
+.delete-btn {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c53030;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upravljanje Boksačkim Klubom</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Upravljanje Boksačkim Klubom</h1>
+
+    <div class="add-boxer-form">
+      <h2>Dodaj Novog Boksača</h2>
+      <label for="name">Ime:</label>
+      <input type="text" id="name" placeholder="Ime" />
+
+      <label for="surname">Prezime:</label>
+      <input type="text" id="surname" placeholder="Prezime" />
+
+      <label for="dateOfEnrollment">Datum Upisa:</label>
+      <input type="date" id="dateOfEnrollment" placeholder="Datum Upisa" />
+
+      <label for="address">Adresa:</label>
+      <input type="text" id="address" placeholder="Adresa" />
+
+      <label for="phoneNumber">Telefonski Broj:</label>
+      <input type="text" id="phoneNumber" placeholder="Telefonski Broj" />
+
+      <label for="city">Grad:</label>
+      <input type="text" id="city" placeholder="Grad" />
+
+      <label for="identificationNumber">OIB:</label>
+      <input type="text" id="identificationNumber" placeholder="OIB" />
+
+      <label for="dateOfBirth">Datum Rođenja:</label>
+      <input type="date" id="dateOfBirth" placeholder="Datum Rođenja" />
+
+      <label for="type">Tip:</label>
+      <select id="type">
+        <option value="Boxer">Boksač</option>
+        <option value="Recreational">Rekreacijski</option>
+      </select>
+
+      <label for="numberOfFights">Broj Borbi:</label>
+      <input type="number" id="numberOfFights" placeholder="Broj Borbi" />
+
+      <label for="lastMedicalExam">Zadnji Liječnički Pregled:</label>
+      <input
+        type="date"
+        id="lastMedicalExam"
+        placeholder="Zadnji Liječnički Pregled"
+      />
+
+      <label for="lastPaymentDate">Datum Zadnje Uplate članarine:</label>
+      <input
+        type="date"
+        id="lastPaymentDate"
+        placeholder="Datum Zadnje Uplate članarine"
+      />
+
+      <label for="nextPaymentDue">Datum Sljedeće Uplate:</label>
+      <input
+        type="date"
+        id="nextPaymentDue"
+        placeholder="Datum Sljedeće Uplate"
+      />
+
+      <button id="addBoxerBtn">Dodaj Boksača</button>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Pretraži boksače" />
+    </div>
+
+    <div class="table-container">
+      <h2>Popis Boksača</h2>
+      <button id="refreshBtn">Osvježi Popis Boksača</button>
+      <table id="boxersTable">
+        <thead>
+          <tr>
+            <th>Datum Zadnje Uplate članarine</th>
+            <th>Datum Sljedeće Uplate</th>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Datum Upisa</th>
+            <th>Adresa</th>
+            <th>Telefonski Broj</th>
+            <th>Grad</th>
+            <th>OIB</th>
+            <th>Datum Rođenja</th>
+            <th>Tip</th>
+            <th>Broj Borbi</th>
+            <th>Zadnji Liječnički Pregled</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
